@@ -1,0 +1,20 @@
+server:
+  port: 8889
+
+logging:
+  path: logs
+  file: userManager.log
+
+spring:
+  application:
+    name: userManager
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/course?serverTimezone=GMT
+    username: root
+    password: 12345
+
+mybatis:
+  type-aliases-package: com.sap.model
+  mapper-locations:
+    - mapper/*

@@ -1,0 +1,4 @@
+com\sap\model\User.class
+com\sap\config\SwaggerConfig.class
+com\sap\Application.class
+com\sap\controller\UserManager.class

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [用户管理系统测试套件]">
+  <listeners>
+    <listener class-name="com.sap.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="用户管理系统测试用例(failed)">
+    <classes>
+      <class name="com.sap.cases.LoginTest">
+        <methods>
+          <include name="loginTrue"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.sap.cases.LoginTest -->
+      <class name="com.sap.cases.UpdateUserInfoTest">
+        <methods>
+          <include name="updateUserInfo"/>
+          <include name="deleteUser"/>
+        </methods>
+      </class> <!-- com.sap.cases.UpdateUserInfoTest -->
+      <class name="com.sap.cases.AddUserTest">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- com.sap.cases.AddUserTest -->
+      <class name="com.sap.cases.GetUserInfoListTest">
+        <methods>
+          <include name="getUserListInfo"/>
+        </methods>
+      </class> <!-- com.sap.cases.GetUserInfoListTest -->
+      <class name="com.sap.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- com.sap.cases.GetUserInfoTest -->
+    </classes>
+  </test> <!-- 用户管理系统测试用例(failed) -->
+</suite> <!-- Failed suite [用户管理系统测试套件] -->
